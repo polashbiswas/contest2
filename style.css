@@ -1,0 +1,118 @@
+html{
+    background-color: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+body{
+    padding: 20px;
+}
+nav{
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+.container{
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+    /* border: 2px solid blue; */
+}
+.card-container{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+    /* width: 25%; */
+}
+.profile-image{
+    height: 100px;
+    width: 30%;
+}
+
+.card{
+    padding: 30px;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+.item{
+    border: 1px solid gray;
+    padding: 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column wrap;
+    border-radius: 10px;
+}
+.profile{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-card > div{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 10px;
+    /* margin-top: 10px; */
+}
+.bottom-card img{
+    width: 30px;
+    height: 30px;
+}
+table{
+    border: 1px solid gray;
+    width: 100%;
+    margin-top: 20px;
+    flex-grow: 1;
+    border-radius: 10px;
+    border-spacing: 0;
+}
+
+thead{
+    border: 1px solid gray;
+}
+td{
+    padding: 10px;
+    border-right: 1px solid gray;
+    color: #808080;
+}
+table td:nth-child(3){
+    border-right: none;
+}
+td > p{
+    color: #808080;
+}
+thead td{
+    border-bottom: 1px solid gray;
+}
+input{
+    display: none;
+}
+label{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid gray;
+    border-radius: 4px;
+}
+input:checked + label{
+    background-color: rgb(126, 116, 116);
+}
+li{
+    margin-top: 10px;
+}
+tr td:nth-child(1), tr td:nth-child(2){
+    width: 30px;
+    text-align: center;
+}
+
+@media (max-width: 700px){
+    .container{
+        flex-flow: column wrap;
+        align-items: center;
+    }
+}
